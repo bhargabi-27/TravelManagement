@@ -1,0 +1,38 @@
+create database automatedtelletmachine;
+show databases;
+use automatedtelletmachine;
+CREATE TABLE signup (
+    formno VARCHAR(20) ,
+    name VARCHAR(255),
+    fname VARCHAR(255),
+    dob DATE,
+    gender VARCHAR(10),
+    email VARCHAR(255),
+    marital VARCHAR(20),
+    address VARCHAR(255),
+    city VARCHAR(100),
+    state VARCHAR(100),
+    pin VARCHAR(10)
+);
+show tables;
+select * from signup;
+CREATE TABLE signuptwo (
+    formno VARCHAR(50),
+    religion VARCHAR(50),
+    category VARCHAR(50),
+    income VARCHAR(50),
+    education VARCHAR(50),
+    occupation VARCHAR(50),
+    pan VARCHAR(50),
+    aadhar VARCHAR(50),
+    senior VARCHAR(50),
+    existing VARCHAR(50)
+);
+CREATE TABLE signupthree (
+    formno VARCHAR(50) NOT NULL,
+    accountType VARCHAR(50),
+    cardnumber VARCHAR(20),
+    pinnumber VARCHAR(10),
+    facility VARCHAR(255)
+);
+create table login(formno varchar(20),cardnumer varchar(20), pinnumber varchar(20));
